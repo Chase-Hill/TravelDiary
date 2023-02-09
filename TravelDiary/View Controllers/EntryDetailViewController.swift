@@ -9,13 +9,28 @@ import UIKit
 
 class EntryDetailViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var entryDateLabel: UILabel!
+    
+    @IBOutlet weak var entryTitleTextField: UITextField!
+    
+    @IBOutlet weak var entryAddressTextField: UITextField!
+    
+    @IBOutlet weak var entryBodyTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    // MARK: - Actions
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

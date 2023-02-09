@@ -59,6 +59,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="entryAddressLabel" destination="hcX-vf-tXP" id="RP8-O3-iVK"/>
+                                    <outlet property="entryDateLabel" destination="grB-6O-RG5" id="SuA-6Y-GyR"/>
+                                    <outlet property="entryNameLabel" destination="qwE-N3-JSL" id="J1a-fl-sfd"/>
                                     <segue destination="9sb-Li-bA7" kind="show" identifier="" id="Sfx-oq-yTW"/>
                                 </connections>
                             </tableViewCell>
@@ -142,8 +145,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wAl-K8-VEU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="9sb-Li-bA7" id="hWk-Eg-J4i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryAddressTextField" destination="Uhp-hh-jlK" id="TcY-qK-LTk"/>
+                        <outlet property="entryBodyTextView" destination="Daw-Zq-Xig" id="gEi-wM-KvV"/>
+                        <outlet property="entryDateLabel" destination="rEs-Gi-2bD" id="mRG-uD-XvY"/>
+                        <outlet property="entryTitleTextField" destination="l7u-gM-WXL" id="LtU-dH-EZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7h-tU-jl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
