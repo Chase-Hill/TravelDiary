@@ -17,6 +17,7 @@
 		AF97539229954FFC00F79211 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97539129954FFC00F79211 /* EntryDetailViewController.swift */; };
 		AF9753952995506200F79211 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9753942995506200F79211 /* EntryTableViewCell.swift */; };
 		AF9753972995592500F79211 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9753962995592500F79211 /* Entry.swift */; };
+		AF97539A29955B2C00F79211 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97539929955B2C00F79211 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AF97539129954FFC00F79211 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		AF9753942995506200F79211 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		AF9753962995592500F79211 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		AF97539929955B2C00F79211 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			children = (
 				AF97539829955AAA00F79211 /* Model */,
 				413AA80427271142008D6631 /* Storyboards */,
-				AF9753932995500500F79211 /* View Controllers */,
+				AF97539C2995600600F79211 /* Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
 			);
@@ -117,6 +119,23 @@
 				AF9753962995592500F79211 /* Entry.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF97539B29955FC600F79211 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF97539929955B2C00F79211 /* EntryController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		AF97539C2995600600F79211 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF9753932995500500F79211 /* View Controllers */,
+				AF97539B29955FC600F79211 /* Model Controller */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +215,7 @@
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
 				AF97539029954F8F00F79211 /* EntryListTableViewController.swift in Sources */,
 				AF97539229954FFC00F79211 /* EntryDetailViewController.swift in Sources */,
+				AF97539A29955B2C00F79211 /* EntryController.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
