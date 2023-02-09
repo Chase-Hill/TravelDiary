@@ -70,7 +70,6 @@
 				413AA80427271142008D6631 /* Storyboards */,
 				AF97539C2995600600F79211 /* Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
-				413AA80527271158008D6631 /* Resources */,
 			);
 			path = TravelDiary;
 			sourceTree = "<group>";
@@ -99,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				413AA81427273B77008D6631 /* DateHelper.swift */,
+				413AA80527271158008D6631 /* Resources */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			children = (
 				AF97538F29954F8F00F79211 /* EntryListTableViewController.swift */,
 				AF97539129954FFC00F79211 /* EntryDetailViewController.swift */,
-				AF9753942995506200F79211 /* EntryTableViewCell.swift */,
+				AF97539D29956F3700F79211 /* Custom View */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -136,6 +136,14 @@
 				AF97539B29955FC600F79211 /* Model Controller */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF97539D29956F3700F79211 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				AF9753942995506200F79211 /* EntryTableViewCell.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

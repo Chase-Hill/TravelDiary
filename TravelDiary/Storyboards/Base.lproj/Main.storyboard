@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="8Rv-qJ-3Ef" customClass="EntryTableViewCell" customModule="TravelDiary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" rowHeight="70" id="8Rv-qJ-3Ef" customClass="EntryTableViewCell" customModule="TravelDiary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Rv-qJ-3Ef" id="Bv4-HZ-SeX">
@@ -61,7 +61,7 @@
                                 <connections>
                                     <outlet property="entryAddressLabel" destination="hcX-vf-tXP" id="RP8-O3-iVK"/>
                                     <outlet property="entryDateLabel" destination="grB-6O-RG5" id="SuA-6Y-GyR"/>
-                                    <outlet property="entryNameLabel" destination="qwE-N3-JSL" id="J1a-fl-sfd"/>
+                                    <outlet property="entryTitleLabel" destination="qwE-N3-JSL" id="J1a-fl-sfd"/>
                                     <segue destination="9sb-Li-bA7" kind="show" identifier="" id="Sfx-oq-yTW"/>
                                 </connections>
                             </tableViewCell>
