@@ -375,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TravelDiary/Resources/Info.plist;
+				INFOPLIST_FILE = "TravelDiary/Helper Files/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -403,7 +403,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TravelDiary/Resources/Info.plist;
+				INFOPLIST_FILE = "TravelDiary/Helper Files/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

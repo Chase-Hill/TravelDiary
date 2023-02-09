@@ -62,7 +62,7 @@
                                     <outlet property="entryAddressLabel" destination="hcX-vf-tXP" id="RP8-O3-iVK"/>
                                     <outlet property="entryDateLabel" destination="grB-6O-RG5" id="SuA-6Y-GyR"/>
                                     <outlet property="entryTitleLabel" destination="qwE-N3-JSL" id="J1a-fl-sfd"/>
-                                    <segue destination="9sb-Li-bA7" kind="show" identifier="" id="Sfx-oq-yTW"/>
+                                    <segue destination="9sb-Li-bA7" kind="show" identifier="toDetailVC" id="Sfx-oq-yTW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

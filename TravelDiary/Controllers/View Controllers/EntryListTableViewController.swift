@@ -10,20 +10,14 @@ import UIKit
 class EntryListTableViewController: UITableViewController {
     
     // MARK: - LifeCycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return EntryController.sharedInstance.entries.count
     }
     
@@ -52,7 +46,18 @@ class EntryListTableViewController: UITableViewController {
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+         //IIDOO
+         if segue.identifier == "toDetailVC" {
+             // What cell?
+             if let indexPath = tableView.indexPathForSelectedRow {
+                 // What destination?
+                 if let destinationVC = segue.destination as? EntryDetailViewController {
+                     // Object to send
+                     let entryToSend = EntryController.sharedInstance.entries[indexPath.row]
+                    // Object to recieve
+                     destinationVC.entryReciever = entryToSend
+                 }
+             }
+         }
      }
 }

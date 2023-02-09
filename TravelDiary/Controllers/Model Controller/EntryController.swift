@@ -39,7 +39,6 @@ class EntryController {
     }
     
     // MARK: - Persistence
-    
     func save() {
         
     }
