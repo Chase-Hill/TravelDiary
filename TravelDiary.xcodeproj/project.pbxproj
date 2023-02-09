@@ -13,6 +13,9 @@
 		413AA7FA2724B794008D6631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7F92724B794008D6631 /* Assets.xcassets */; };
 		413AA7FD2724B794008D6631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7FB2724B794008D6631 /* LaunchScreen.storyboard */; };
 		413AA81527273B77008D6631 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA81427273B77008D6631 /* DateHelper.swift */; };
+		AF97539029954F8F00F79211 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97538F29954F8F00F79211 /* EntryListTableViewController.swift */; };
+		AF97539229954FFC00F79211 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97539129954FFC00F79211 /* EntryDetailViewController.swift */; };
+		AF9753952995506200F79211 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9753942995506200F79211 /* EntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		413AA7FC2724B794008D6631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AA7FE2724B794008D6631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413AA81427273B77008D6631 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		AF97538F29954F8F00F79211 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		AF97539129954FFC00F79211 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		AF9753942995506200F79211 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		413AA7EF2724B792008D6631 /* TravelDiary */ = {
 			isa = PBXGroup;
 			children = (
+				413AA80427271142008D6631 /* Storyboards */,
+				AF9753932995500500F79211 /* View Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
-				413AA80427271142008D6631 /* Storyboards */,
 			);
 			path = TravelDiary;
 			sourceTree = "<group>";
@@ -89,6 +96,16 @@
 				413AA81427273B77008D6631 /* DateHelper.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		AF9753932995500500F79211 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF97538F29954F8F00F79211 /* EntryListTableViewController.swift */,
+				AF97539129954FFC00F79211 /* EntryDetailViewController.swift */,
+				AF9753942995506200F79211 /* EntryTableViewCell.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9753952995506200F79211 /* EntryTableViewCell.swift in Sources */,
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
+				AF97539029954F8F00F79211 /* EntryListTableViewController.swift in Sources */,
+				AF97539229954FFC00F79211 /* EntryDetailViewController.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
